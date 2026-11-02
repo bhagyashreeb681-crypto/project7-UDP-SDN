@@ -1,0 +1,33 @@
+PROJECT 7: UDP PACKET LOSS DETECTION AND RECOVERY
+
+EXPERIMENT 1: NORMAL NETWORK
+
+Total Packets: 20
+Transmission Attempts: 20
+Retries: 0
+Successful Packets: 20
+Failed Packets: 0
+Acknowledgment Percentage: 100%
+Execution Time: 4.18 seconds
+
+
+EXPERIMENT 2: SIMULATED 30% PACKET LOSS
+
+Total Packets: 20
+Transmission Attempts: 31
+Retries: 11
+Successful Packets: 18
+Failed Packets: 2
+Recovery Percentage: 90%
+Execution Time: 30.15 seconds
+
+
+OBSERVATION:
+
+In the normal network, all 20 packets were successfully acknowledged without retransmission.
+
+During simulated packet loss, the client performed 11 additional transmission attempts.
+
+18 packets were successfully acknowledged, while 2 packets remained unsuccessful after the maximum retry attempts.
+
+The experiment demonstrates the use of timeout detection and retransmission to improve UDP packet delivery reliability.
